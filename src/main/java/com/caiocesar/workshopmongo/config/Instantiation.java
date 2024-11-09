@@ -45,5 +45,9 @@ public class Instantiation implements CommandLineRunner {
 		
 		// Salvar os objetos como dados no banco de dados MongoDB
 		postRepository.saveAll(Arrays.asList(post1, post2));
+		
+		maria.getPosts().addAll(Arrays.asList(post1, post2));
+		
+		userRepository.save(maria);
 	}
 }
