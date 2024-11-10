@@ -1,5 +1,6 @@
 package com.caiocesar.workshopmongo.services;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,4 +26,9 @@ public class PostService {
 		return postRepository.searchTitle(text);
 	}
 
+	public List<Post> fullSearch(String text, LocalDate minDate, LocalDate maxDate) {
+		// Acrescentar um dia na data final, para o programa considerar o dia original
+		maxDate = maxDate.plusDays(1);
+		return postRepository.fullSearch(text, minDate, maxDate);
+	}
 }
