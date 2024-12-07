@@ -1,4 +1,5 @@
 # Workshop - Spring Boot 4 and MongoDB
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/CesarImperas/workshop-springboot-mongodb/blob/main/LICENSE)
 
 # About the Project
 This project is a hands-on workshop focused on using Spring Boot with MongoDB. 
